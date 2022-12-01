@@ -2,7 +2,7 @@ elfWithMostCalories1 = 0
 elfWithMostCalories2 = 0
 elfWithMostCalories3 = 0
 calorieCounterForElf = 0
-with open('inputDay1.txt', 'r') as f:
+with open('day1/inputDay1.txt', 'r') as f:
     contents = f.readlines()
     for line in contents:
         if line.strip() != '':
