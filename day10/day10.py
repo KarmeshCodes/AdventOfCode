@@ -73,7 +73,16 @@ def day10part2():
                         spritePositions[0] = spritePositions[0] + int(numToMove)
                         spritePositions[1] = spritePositions[1] + int(numToMove)
                         spritePositions[2] = spritePositions[2] + int(numToMove)
+    finalArr = []
     for item in crtArray:
+        innerString = ''
+        for letter in item:
+            if letter == '.':
+                innerString += ' '
+            else:
+                innerString += '#'
+        finalArr.append(innerString)
+    for item in finalArr:
         print(item)
 
 def isLit(spritePos,currPos):
